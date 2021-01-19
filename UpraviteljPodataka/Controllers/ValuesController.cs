@@ -14,8 +14,8 @@ namespace UpraviteljPodataka.Controllers
         // GET api/values
         public IEnumerable<string> Get()
         {
-            var useId = RequestContext.Principal.Identity.GetUserId();
-            return new string[] { "value1", "value2" };
+            var userId = RequestContext.Principal.Identity.GetUserId();
+            return new string[] { "value1", "value2", userId };
         }
 
         // GET api/values/5
